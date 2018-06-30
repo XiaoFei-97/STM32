@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY -I..\HARDWARE\EXTI -I..\HARDWARE\WDG -I..\HARDWARE\TIME -I..\HARDWARE\TPAD -I..\HARDWARE\OLED -I..\HARDWARE\LCD -I..\USMART -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ITEMP -I..\HARDWARE\LSENS -I..\HARDWARE\DAC
+-I G:\桌面文件夹\STM32\STM32测试实验\STM32寄存器测试版\USER\RTE
+-I F:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I F:\MDK5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD
+-o ..\obj\time.o --omf_browse ..\obj\time.crf --depend ..\obj\time.d "..\HARDWARE\TIME\time.c"
